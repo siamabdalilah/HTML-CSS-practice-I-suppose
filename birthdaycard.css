@@ -1,0 +1,60 @@
+html{
+
+    font-family: arial;
+    
+    height: 100%;
+    width:100%;
+
+    animation: back 5s;
+    background-image: linear-gradient(to bottom right, #89cff0, slateBlue);
+  }
+
+  @keyframes back{
+    from {opacity: 0; background-size: 200% 200%; }
+    to{
+      opacity: 1; background-size: 100% 100%;
+    }
+  }
+
+
+  div.wrapper{
+    position: fixed;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+
+    
+
+    font-size: 100px;
+    color: purple;
+    -webkit-transform: translate(0%, -50%);
+
+    text-shadow: 2px 2px black;
+
+    -webkit-transition: font-size 0.5s, color 1s, -webkit-transform 2s;
+  }
+
+  div.wrapper:hover{
+    font-size: 115px;
+    color: mediumpurple;
+     -webkit-transform: translate(0%, -50%) ;
+
+  }
+  div.wrapper:active{
+    animation-name:rot;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+  }
+
+  @keyframes rot{
+    from {
+    -webkit-transform: translate(0%, -50%) rotate(0deg) ;
+    }
+    to{
+      -webkit-transform: translate(0%, -50%) rotate(360deg) ;
+    }
+  }
+  
+  
