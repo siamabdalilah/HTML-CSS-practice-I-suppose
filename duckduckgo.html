@@ -5,17 +5,90 @@
 		<title>
 			DuckDuckGo Search form
 		</title>
+		<style type = "text/css">
+			html{
+				font-family: arial;
+				background-color: tomato;
+			}
+			div.top{
+				font-size: 30px;
+				text-align: center;
+			}
+			div.searchbar{
+				width: 100%;
+				text-align: center;
+			}
+
+			input.t{
+				width:500px; 
+				height: 50px;
+				animation-name: tix;
+				font-size: 18px;
+				animation-duration: 1.5s;
+			}
+
+			@keyframes tix{
+				from{width: 0px;}
+				to{
+					width: 500px;
+				}
+			}
+
+			input.sub{
+				background-color: DodgerBlue;
+				cursor: pointer;
+				border:none;
+				height: 56px;
+				width: 100px;
+				font-size: 25px;
+				position: absolute;
+				top: 42px;
+				animation-name: subx;
+				animation-duration: 2s;
+
+				-webkit-transition: background-color 0.3s;
+			}
+			input.sub:hover{
+				background-color: orange;
+			}
+		
+			@keyframes subx{
+				0%{opacity: 0;}
+				75% {opacity: 0;}
+				100%{opacity: 1;}
+			}
+
+			span.nani{
+				font-size: 25px;
+			}
+
+			span.baka{
+				background-color: blue;
+			}
+
+			
+		</style>
 	</head>
 
 
 	<body>
-		<form action = "https://duckduckgo.com/" method = "get">
-			<label> DuckDuckGo Search </label><input type = "text" name = "q" />
-			<input type = "submit" value ="Search"/>
-		</form>
+		<div class = "top"> DuckDuckGo</div>
+		<div class = "searchbar">
+			<form  action = "https://duckduckgo.com/" method = "get">
+				<input class = "t" type = "text" name = "q" />
+				<input type = "submit"  class = "sub" value ="Search"/> </span>
+			</form>
+		</div>
 
+		<div id = "first">
+			If you are looking for the CSE330 regrade policy
+		</div>
+		<div id = "second">
+			Look no further
+		</div>
+		<div id = "third">We do not need DuckDuckGo for this. Here you go:</div>
 
-		<p> If you are looking for the CSE330 regrade policy, look no further. We do not need DuckDuckGo for this. Here you go:</p>
+		<!--<p> If you are looking for the CSE330 regrade policy, look no further. We do not need DuckDuckGo for this. Here you go:</p>-->
 		<p>It must be objectively clear that an error was made during grading. Examples of such errors include a grader incorrectly summing points or incorrectly marking something not completed. Grades based on the judgement of the grader, except in extremely extenuating circumstances, will not be regraded. In particular, grades for categories like "Site is Visually Appealing" will not be regraded. All regrade requests must be submitted by email to cse330ta@gmail.com within one week of grading. Requests submitted after this deadline will not be considered. Requests must contain a specific explanation of the error, including filenames and line numbers of code, if appropriate. </p>
 	</body>
 </html>
