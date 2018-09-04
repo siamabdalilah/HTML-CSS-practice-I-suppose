@@ -5,69 +5,7 @@
 		<title>
 			DuckDuckGo Search form
 		</title>
-		<style type = "text/css">
-			html{
-				font-family: arial;
-				background-color: tomato;
-			}
-			div.top{
-				font-size: 30px;
-				text-align: center;
-			}
-			div.searchbar{
-				width: 100%;
-				text-align: center;
-			}
-
-			input.t{
-				width:500px; 
-				height: 50px;
-				animation-name: tix;
-				font-size: 18px;
-				animation-duration: 1.5s;
-			}
-
-			@keyframes tix{
-				from{width: 0px;}
-				to{
-					width: 500px;
-				}
-			}
-
-			input.sub{
-				background-color: DodgerBlue;
-				cursor: pointer;
-				border:none;
-				height: 56px;
-				width: 100px;
-				font-size: 25px;
-				position: absolute;
-				top: 42px;
-				animation-name: subx;
-				animation-duration: 2s;
-
-				-webkit-transition: background-color 0.3s;
-			}
-			input.sub:hover{
-				background-color: orange;
-			}
-		
-			@keyframes subx{
-				0%{opacity: 0;}
-				75% {opacity: 0;}
-				100%{opacity: 1;}
-			}
-
-			span.nani{
-				font-size: 25px;
-			}
-
-			span.baka{
-				background-color: blue;
-			}
-
-			
-		</style>
+		<link rel = "stylesheet" type = "text/css" href = "duckduckgo.css">
 	</head>
 
 
@@ -76,7 +14,7 @@
 		<div class = "searchbar">
 			<form  action = "https://duckduckgo.com/" method = "get">
 				<input class = "t" type = "text" name = "q" />
-				<input type = "submit"  class = "sub" value ="Search"/> </span>
+				<input type = "submit"  class = "sub" value ="Search"/>
 			</form>
 		</div>
 
